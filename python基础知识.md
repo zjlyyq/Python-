@@ -8,3 +8,9 @@ print(float_num)
 
 > 3.1415926333333335
 ```
+
+
+### 匿名函数
+```
+lambda argument1, argument2,... argumentN : expression
+```

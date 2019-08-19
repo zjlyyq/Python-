@@ -15,15 +15,15 @@ values = [['jason', '2000-01-01', 'male'],
 
 
 # 传统实现
+l = []
 for item in values:
-    l = []
     index = 0
+    d = {}
     for v in item:
-            d = {}
-            d[attributes[index]] = v
-            l.append(d)
-            index += 1
-    print(l)
+        d[attributes[index]] = v
+        index += 1
+    l.append(d)
+print(l)
         
 
 # pythonic实现
