@@ -17,3 +17,12 @@ print(add_func(2))
 
 print_hello = lambda  :print('Hello world')
 print_hello()
+
+# 这句话也太pythonic了吧
+print([(lambda x: x*x)(x) for x in range(10)])
+# 输出
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+nums = [1,2,3,4,5,6,7,8,9]
+squared = map(lambda x: x**2,nums)
+print(squared)
